@@ -59,7 +59,7 @@ def call1(v1,v2,v3,v4):
     return jsonify( { 'message': 'ok' } ), 200
     # or return jsonify( { 'message': your_variable } ), 200
   else:
-    return jsonify( { 'message': 'valentin_error_message'} ), 401
+    return jsonify( { 'message': 'your_error_message'} ), 401
 
 # put
 @app.route('/api/noauth/v1/put/<v1>/<v2>/<v3>/<v4>/<v5>', methods = ['PUT'])
@@ -69,7 +69,7 @@ def call2(v1,v2,v3,v4,v5):
       return jsonify( { 'message': 'ok' } ), 200
       # or return jsonify( { 'message': your_variable } ), 200
     else:
-      return jsonify( { 'message': 'valentin_error_message'} ), 401
+      return jsonify( { 'message': 'your_error_message'} ), 401
 
 # and if we will need in web token authentication
 
@@ -95,7 +95,7 @@ def call_a2(v1,v2):
       return jsonify( { 'message': 'ok' } ), 200
       # or return jsonify( { 'message': your_variable } ), 200
     else:
-      return jsonify( { 'message': 'valentin_error_message'} ), 401
+      return jsonify( { 'message': 'your_error_message'} ), 401
 
 # put
 @app.route('/api/auth/v1/put/<v1>/<v2>', methods=['PUT'])
@@ -106,7 +106,7 @@ def call_a3(v1, v2):
       return jsonify( { 'message': 'ok' } ), 200
       # or return jsonify( { 'message': your_variable } ), 200
     else:
-      return jsonify( { 'message': 'valentin_error_message'} ), 401
+      return jsonify( { 'message': 'your_error_message'} ), 401
 
 # ==== end of API calls from one-page web application ====
 
